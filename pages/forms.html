@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE LAYOUT STRUCTURE</title>
+    <link rel="stylesheet" href="../css/customstyle.css">
+
+    <style>
+
+        .form-div{
+            width: 92%;
+        }
+        .form1{
+            float: left;
+            border: 2.6px solid rgb(104, 89, 89);
+            padding: 15px;
+            border-radius: 12px;
+            top:5%;
+        }
+
+        .form1 .submit {
+            margin-left: 37%;
+            background-color: rgb(17, 189, 123);
+            padding: 9px;
+            width: 25%;
+            border: 2.5px solid rgb(78, 72, 72);
+            border-radius: 12px;
+        }
+    
+        .form2{
+            float:right;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!--STARTING TAG HEADER-->
+    <header>
+        <div>
+            <img src="../img/received_1326559778015226-removebg-preview (1).png" alt= "" style="height: 100px;width: 100px;">
+            <h1>Sangguniang Kabataan</h1>
+            <h3>Barangay Tamayo Santa Cruz Marinduque</h3>
+        </div>
+        <div class="container">
+            <a href="../index.html">Home</a>|
+            <a href="../pages/about.html">About</a>|
+            <a href="../pages/contactUs.html">Contact Us</a>|
+            <a href="../pages/inquiry.html">Inquiry</a>|
+            <a href="../pages/profile.html">Profile</a>|
+            </button><a href="Login.html">Login</button>
+         </div>
+    </header>
+    <!--END TAG HEADER-->
+
+    <section>
+        <nav>
+                    <ul><li><a href="../pages/heading.html">Headings</a></li></ul>
+                    <ul><li><a href="../pages/tables.html">Tables</a></li></ul>
+                    <ul><li><a href="../pages/HTML List.html">HTML List</a></li></ul>
+                    <ul><li><a href="../pages/forms.html">Forms</a></li></ul>
+                    <ul><li><a href="../pages/image.html">image</a></li></ul>
+        </nav>
+        <article>
+            <h2>KK SURVEY QUESTIONNAIRE</h2>
+          <div class="form-div">
+            <div class="form1">
+                <form action = "HTML List.html" method = "get">
+                    <label for="first_name">First name:</label>
+                    <input type = "text" name = "first_name" required/>
+                    <br><br>
+                    <label for="first_name">Last name:</label>
+                    <input type = "text" name = "last_name" required/>
+                    <br><br>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age"required/> 
+                    <br><br>
+                    <label for="gender">Gender:</label>
+                    <select name="" id="">
+                        <option value=""disabled selected>select gender</option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                    </select>
+                    <br>
+                    <input type="checkbox" name="Birthdate" id="Birthdate">Birthdate <br>
+                    <input type="date" name="datenow" id="datenow"required>                 
+                    <br><br>
+                    <label for="">E-mail Address:</label>     
+                    <input type="email" name="E-mail adress" id="E-mail adress"required>    
+                    <br><br>
+                    <label for="Contact No.">Contact No:</label>
+                    <input type="number" num="Contact No."required/>
+                    <br><br>
+                    <label for="location">location:</label>
+                    <input type="text"name="location"required>
+                    <br><br>
+                    <label for="">Selection</label>
+                    <select name="" id="">
+                        <option value=""disabled selected>choose your Sitio</option>
+                        <option value="">Bayanan 1</option>
+                        <option value="">Bayanan 2</option>
+                        <option value="">Duongan 1</option>
+                        <option value="">Duongan 2</option>
+                        <option value="">Duongan 3</option>
+                        <option value="">SideGrass</option>
+                        <option value="">Tundo labak</option>
+                    </select>
+                    <br>
+                    <button disabled>Disabled Button</button><br>
+                    <fieldset>
+                        <input type="radio"id='English'>
+                        <label for="english">English</label>
+                        <input type="radio"id='english'>
+                        <label for="english">Tagalog</label>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <textarea name="" id=""value="Please input your message"placeholder="Please input your message...."></textarea>
+                    </fieldset>
+                    <br><br>
+                    <label for="">Upload file:</label>
+                    <input type="file"name="filedata"id="filedata">
+                    <br><br>
+                 </form>
+                 <fieldset>
+                    <legend><b>Captions</b></legend>
+                    <p>this is a example legend format </p>
+                 </fieldset><br>
+                 <input type = "submit" id="submit" class="submit">
+            </div>
+
+            <div class="form2">
+                <form action="HTML List.html"method="get">
+                   <fieldset>
+                    <legend><b>Form Input Data</b></legend>
+                        <label for="">Enter Your Name</label>
+                        <input type="text"name="name"id="name">
+                        <br><br>
+                        <label for="">Enter Your Age</label>
+                        <input type="number"name="age"id="age">
+                        <br><br>
+                        <label for="">Input Month:</label>
+                        <input type="month"name="dataMonth"id="dataMonth">
+                        <br><br>
+                        <label for="">Week</label>
+                        <input type="week"name="dataWeek"id="dataWeek">
+                        <label for="">Time</label>
+                        <input type="time"name="datatime"id="datatime">
+                        <br><br>
+                        <input type="submit"value="submit">
+                    </fieldset>
+                </form>
+
+            </div>
+
+          </div>
+        </article>
+        
+    </section>
+    <link rel="stylesheet" href="css/customstyle.css">
+
+    <!--STARTING TAG FOOTER-->
+    <footer>
+        <h2>Sangguniang Kabataan</h2>
+        <div class="footer">
+            <a href="../pages/aboutUs.html">About us</a>
+            <a href="../pages/Refund.html">Refund policy</a>
+            <a href="../pages/terms of use.html">terms of use</a>
+            <a href="../pages/privacy policy.html">privacy policy</a>
+            <a href="../pages/FAQ's.html">FAQ's</a>
+            <a href="../pages/Affiliates.html">Affiliates</a>
+            <a href="../pages/Contact.html">Contact</a>
+        </div>
+        <div>
+            <p>
+                Copyrights @ Sangguniang Kabataan
+                PRIVATE LIMITED. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <!--END TAG FOOTER-->
+
+</body>
+</html>
